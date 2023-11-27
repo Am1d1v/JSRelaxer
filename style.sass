@@ -28,14 +28,10 @@ body
         height: 190px
         animation: rotate 7.5s linear forwards infinite
         transform-origin: bottom center
-
-@keyframes rotate
-    0%
-        transform: rotate(0deg)
-    100%
-       transform: rotate(360deg)         
-
-
+    &.grow
+        animation: grow 3s linear forwards
+    &.shrink
+        animation: shrink 3s linear forwards
 .circle
     background-color: #010f1c    
     height: 100%
@@ -62,6 +58,26 @@ body
     width: 20px
     display: block
 
+#text
+    font-size: 20px
 
+// Keyframes
 
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+       transform: rotate(360deg)    
+
+@keyframes grow
+    0%
+        transform: scale(1)
+    100%
+       transform: scale(1.5)       
+
+@keyframes shrink
+    0%
+        transform: scale(1.5)
+    100%
+       transform: scale(1) 
 
