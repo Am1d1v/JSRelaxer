@@ -23,7 +23,24 @@ body {
   position: relative;
   transform: scale(1);
 }
+.container-pointer {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .circle {
   background-color: #010f1c;
   height: 100%;
@@ -43,4 +60,12 @@ body {
   position: absolute;
   top: -10px;
   left: -10px;
+}
+
+.pointer {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
